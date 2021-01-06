@@ -2,12 +2,11 @@
 \ProvidesClass{mimosis}[2017/08/01 Minimal modern thesis class]
 
 \PassOptionsToPackage{
-  DIV  = 10,    % TODO: Make configurable
+  DIV  = 12,    % TODO: Make configurable
   BCOR = 10mm,  % TODO: Make configurable
 }{typearea}
 
-\LoadClass[a4paper,
-           twoside,
+\LoadClass[twoside,
            12pt,
            cleardoublepage=empty,
            numbers=noenddot,
