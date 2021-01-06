@@ -9,11 +9,11 @@ This repository is based off amazing work from:
 And inspired by the design principles (and books) of Edward Tufte: minimal, functional, and elegant.
 
 ## how to use
-- There are three branches of this repository
+- There are three branches of this repo:
   - main = citations are footnotes, figures default to full width
   - partial = citations are sidenotes but pages are full margin unless sidenotes/sidefigures are used
   - sidenotes = most Tufte-like, wide margin for citations, figures, etc
-- This repo is fashioned as a template. To best use, log in with your GitHub account and click `use this template`
+- This repo is fashioned as a template; to best use, log in with your GitHub account and click `use this template`
 - To build, simply type `make build`
 - To clean, simply type `make clean`
 
