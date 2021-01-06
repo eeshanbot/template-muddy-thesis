@@ -2,17 +2,29 @@
 \ProvidesClass{mimosis}[2017/08/01 Minimal modern thesis class]
 
 \PassOptionsToPackage{
-  DIV  = 12,    % TODO: Make configurable
-  BCOR = 10mm,  % TODO: Make configurable
+  DIV=12,
+  BCOR=2mm,
+  footinclude=false,
+  headinclude=false
 }{typearea}
 
-\LoadClass[twoside,
+\LoadClass[a4paper, % KOMA options rewrites this as letter in thesis.tex
+           oneside, % switch between oneside (screen) and twoside (binding)
            12pt,
            cleardoublepage=empty,
            numbers=noenddot,
            titlepage,
            toc=bibliography,
-           toc=index,]{scrbook}
+           toc=index]{scrbook}
+
+\makeatletter
+\if@twoside % commands below work only for twoside option of \documentclass
+    \newlength{\textblockoffset}
+    \setlength{\textblockoffset}{12mm}
+    \addtolength{\hoffset}{\textblockoffset}
+    \addtolength{\evensidemargin}{-2.0\textblockoffset}
+\fi
+\makeatother
 
 \RequirePackage{ifpdf}
 \RequirePackage{ifxetex}
@@ -215,6 +227,9 @@
 
 \RequirePackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
+\clearscrheadfoot
+\cfoot[\pagemark]{\pagemark}
+\renewcommand*{\pnumfont}{\small \normalfont}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Typefaces for parts, chapters, and sections
