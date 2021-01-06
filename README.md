@@ -1,4 +1,4 @@
-# thesis-mimosis-sidenote: tufte-inspired MIT thesis template
+# muddy-thesis tufte-inspired MIT thesis template
 
 This repository is based off amazing work from:
 - [Pseudomanifold/latex-mimosis](https://github.com/Pseudomanifold/latex-mimosis)
