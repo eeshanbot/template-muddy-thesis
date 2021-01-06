@@ -4,17 +4,11 @@ This repository is named after the on-campus bar at MIT, _The Muddy_, in honor o
 
 Everything is based on [`KOMA-script`](https://ctan.org/pkg/koma-script?lang=en), so it is easy to make changes as you wish.
 
-This repository is based off amazing work from:
+This repository is a light repackaging of amazing work from:
 - [Pseudomanifold/latex-mimosis](https://github.com/Pseudomanifold/latex-mimosis)
-- [andythomas/TeX-sidenotes](https://github.com/andythomas/TeX-sidenotes)
-
-And inspired by the design principles (and books) of Edward Tufte: minimal, functional, and elegant.
 
 ## how to use
 - There are three branches of this repo:
-  - main = simplest to use, figures default to full width
-  - partial = enables sidenotes but pages are full margin when sidenotes are not in use
-  - sidenotes = most Tufte-like, consistent wide margin for excessive use of sidenotes
 - This repo is fashioned as a template; to best use, log in with your GitHub account and click `use this template`
 - To build, simply type `make build`
 - To clean, simply type `make clean`
