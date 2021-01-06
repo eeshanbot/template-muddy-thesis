@@ -1,0 +1,56 @@
+\documentclass{mimosis}
+
+\newacronym[description={Principal component analysis}]{PCA}{PCA}{principal component analysis}
+\newacronym                                            {SNF}{SNF}{Smith normal form}
+\newacronym[description={Topological data analysis}]   {TDA}{TDA}{topological data analysis}
+
+\newglossaryentry{LaTeX}{%
+  name        = {\LaTeX},
+  description = {A document preparation system},
+  sort        = {LaTeX},
+}
+
+\newglossaryentry{Real numbers}{%
+  name        = {$\real$},
+  description = {The set of real numbers},
+  sort        = {Real numbers},
+}
+
+\makeindex
+\makeglossaries
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title Page Information
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{\textbf{Computational Approaches for Acoustic \& Environmental Informational Utility in Marine Robotics}}
+\author{EeShan Chetan Bhatt}
+\date{May 4\th 2021}
+
+\begin{document}
+
+\mainmatter
+
+  \include{Sources/Title}
+  \include{Sources/Abstract}
+  \tableofcontents
+
+  \include{Sources/Introduction}
+
+% This ensures that the subsequent sections are being included as root
+% items in the bookmark structure of your PDF reader.
+\bookmarksetup{startatroot}
+\backmatter
+
+  \begingroup
+    \let\clearpage\relax
+    \glsaddall
+    \printglossary[type=\acronymtype]
+    \newpage
+    \printglossary
+  \endgroup
+
+  \printindex
+  \printbibliography
+
+\end{document}

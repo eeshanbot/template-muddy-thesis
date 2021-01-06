@@ -1,0 +1,47 @@
+%% doing this manually because of the Joint Program
+
+\def\signature#1#2{\par\noindent#1\dotfill\null\\*
+  {\raggedleft #2\par}}
+
+%% --- TITLEPAGE --- %%
+% keep this to protect internal macros + use @ as a normal character
+\makeatletter
+
+\begin{titlepage}
+  \begin{center}
+    \begin{Large}
+      \@title
+    \end{Large}\\[0.1em]
+    %
+    \emph{\footnotesize by}\\
+    {\large \@author} \\[-0.25em]
+    B.S.E. Mechanical Engineering, \textsc{Duke University} (2015) \\ [2em]
+    %
+    \begin{singlespace}
+    {Submitted to the Joint Program in Oceanography and Applied Ocean Science \& Engineering in partial fulfillment of the requirements for the degree of Doctor of Philosophy in Mechanical \& Oceanographic Engineering} \\
+    \end{singlespace}
+    %
+    \emph{\footnotesize at the}\\
+    {\large \textsc{Massachusetts Institute of Technology}} \\
+    \emph{\footnotesize and the}\\
+    {\large \textsc{Woods Hole Oceanographic Institution}} \\ [2em]
+    %
+    \begin{singlespace}
+    {\copyright2021 E.C. Bhatt. All rights reserved. \\ The author hereby grants to MIT and WHOI permission to reproduce and to distribute publicly copies of this thesis document in whole or in part in any medium now known or hereafter created.} \\ [2em]
+
+    \signature{Author}{\footnotesize Department of Mechanical Engineering, MIT \\ Applied Ocean Science \& Engineering, WHOI \\ \@date}
+    \vspace{1em}
+    \signature{Certified by}{Henrik Schmidt \\ \footnotesize Professor of Mechanical and Ocean Engineering, MIT \\ Thesis Supervisor}
+    \vspace{1em}
+    \signature{Accepted by}{Nicholas Hadjiconstantinou \\ \footnotesize Professor of Mechanical Engineering, MIT \\ Chair, Department Committee on Graduate Students}
+    \vspace{1em}
+    \signature{Accepted by}{David Ralston \\ \footnotesize Associate Scientist with Tenure, Applied Ocean Physics \& Engineering, WHOI \\ Chair, Joint Committee for Applied Ocean Science \& Engineering}
+    \end{singlespace}
+  \end{center}
+  \makeatother
+\end{titlepage}
+
+\newpage
+\null
+\thispagestyle{empty}
+\newpage
