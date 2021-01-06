@@ -1,4 +1,4 @@
-# muddy-thesis: tufte-inspired MIT thesis template
+# muddy-thesis-template
 
 This repository is named after the on-campus bar at MIT, _The Muddy_, in honor of all the thesis writing I would have done there if COVID-19 was not a thing. Accordingly, the styling (formatting, page numbers, coverpage) are appropriate for an MIT thesis. I found the provided MIT thesis template _too automated_ with comments and switches galore; this version automates only the most universal parts and lets the user manually input the details. Check the [MIT specifications for thesis formatting](https://libraries.mit.edu/distinctive-collections/thesis-specs/#format) to ensure you have the correct formatting for your graduation scenario (and congratulations!).
 
