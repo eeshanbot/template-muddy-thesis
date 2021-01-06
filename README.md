@@ -12,9 +12,9 @@ And inspired by the design principles (and books) of Edward Tufte: minimal, func
 
 ## how to use
 - There are three branches of this repo:
-  - main = citations are footnotes, figures default to full width
-  - partial = citations are sidenotes but pages are full margin unless sidenotes/sidefigures are used
-  - sidenotes = most Tufte-like, wide margin for citations, figures, etc
+  - main = simplest to use, figures default to full width
+  - partial = enables sidenotes but pages are full margin when sidenotes are not in use
+  - sidenotes = most Tufte-like, consistent wide margin for excessive use of sidenotes
 - This repo is fashioned as a template; to best use, log in with your GitHub account and click `use this template`
 - To build, simply type `make build`
 - To clean, simply type `make clean`
