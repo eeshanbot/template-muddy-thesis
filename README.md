@@ -13,9 +13,9 @@ And inspired by the design principles (and books) of Edward Tufte: minimal, func
   - main = citations are footnotes, figures default to full width
   - partial = citations are sidenotes but pages are full margin unless sidenotes/sidefigures are used
   - sidenotes = most Tufte-like, wide margin for citations, figures, etc
-- This repo is fashioned as a template. To best use, log in with your GitHub account and click `use this template`.
-- To build, simply type `make build`.
-- To clean, simply type `make clean`.
+- This repo is fashioned as a template. To best use, log in with your GitHub account and click `use this template`
+- To build, simply type `make build`
+- To clean, simply type `make clean`
 
 Personal preference: I use Sublime with the LaTeXing package. There are several help guides online to set this up correctly depending on your operating system.
 
