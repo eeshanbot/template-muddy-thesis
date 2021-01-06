@@ -1,6 +1,6 @@
 # muddy-thesis: tufte-inspired MIT thesis template
 
-This repository is named after the on-campus bar at MIT, _The Muddy_, in honor of all the thesis writing I would have done there if COVID-19 was not a thing. Accordingly, the styling (formatting, page numbers, coverpage) are appropriate for an MIT thesis. I found the provided MIT thesis template overwhelming with all of its comments and definitions; this automates only the most universal parts. Check the [MIT specifications for thesis formatting](https://libraries.mit.edu/distinctive-collections/thesis-specs/#format) to ensure you have the correct formatting for your graduating conditions (and congratulations!).
+This repository is named after the on-campus bar at MIT, _The Muddy_, in honor of all the thesis writing I would have done there if COVID-19 was not a thing. Accordingly, the styling (formatting, page numbers, coverpage) are appropriate for an MIT thesis. I found the provided MIT thesis template clunky with comments overwhelming actual LaTeX definitions; this version automates only the most universal parts and lets the user manually customize the details. Check the [MIT specifications for thesis formatting](https://libraries.mit.edu/distinctive-collections/thesis-specs/#format) to ensure you have the correct formatting for your graduating conditions (and congratulations!).
 
 Everything is based on [`KOMA-script`](https://ctan.org/pkg/koma-script?lang=en), so it is easy to make changes as you wish.
 
