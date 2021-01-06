@@ -3,21 +3,8 @@
 % letter size
 \KOMAoptions{paper=letter}
 
-\newacronym[description={Principal component analysis}]{PCA}{PCA}{principal component analysis}
-\newacronym                                            {SNF}{SNF}{Smith normal form}
-\newacronym[description={Topological data analysis}]   {TDA}{TDA}{topological data analysis}
-
-\newglossaryentry{LaTeX}{%
-  name        = {\LaTeX},
-  description = {A document preparation system},
-  sort        = {LaTeX},
-}
-
-\newglossaryentry{Real numbers}{%
-  name        = {$\real$},
-  description = {The set of real numbers},
-  sort        = {Real numbers},
-}
+\include{Glossary}
+\include{Acronym}
 
 \makeindex
 \makeglossaries
@@ -33,10 +20,10 @@
 \begin{document}
 
 % no frontmatter b/c MIT wants consecutively Arabic numbered pages
-
 \mainmatter
   \include{Sources/Title}
   \include{Sources/Abstract}
+  \include{Sources/Acknowledgements}
   \include{Sources/Introduction}
 
 % This ensures that the subsequent sections are being included as root

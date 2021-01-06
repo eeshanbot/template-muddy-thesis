@@ -296,21 +296,22 @@
 % Bibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% I like the bibliography to be extremely plain, showing only a numeric
-% identifier and citing everything in simple brackets. The first names,
+% Author-title in footnote, list in references. The first names,
 % if present, will be initialized. DOIs and URLs will be preserved.
 
 \usepackage[%
-  autocite     = plain,
+  autocite     = footnote,
   backend      = biber,
   doi          = true,
   url          = true,
   giveninits   = true,
+  uniquename   = false,
   hyperref     = true,
   maxbibnames  = 99,
   maxcitenames = 99,
-  sortcites    = true,
-  style        = numeric,
+  sortcites    = false,
+  citestyle    = authortitle,
+  bibstyle     = numeric,
   ]{biblatex}
 
 \input{bibliography-mimosis}
