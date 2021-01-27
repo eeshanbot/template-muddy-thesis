@@ -8,7 +8,6 @@ This repository is a light repackaging of amazing work from:
 - [Pseudomanifold/latex-mimosis](https://github.com/Pseudomanifold/latex-mimosis)
 
 ## how to use
-- There are three branches of this repo:
 - This repo is fashioned as a template; to best use, log in with your GitHub account and click `use this template`
 - To build, simply type `make build`
 - To clean, simply type `make clean`
