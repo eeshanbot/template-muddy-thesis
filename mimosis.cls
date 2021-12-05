@@ -288,6 +288,11 @@
   linkcolor  = RoyalBlue,
   urlcolor   = RoyalBlue,
   unicode,
+  pdftex,
+  pdfauthor={YOUR NAME},
+  pdftitle={YOUR TITLE},
+  pdfkeywords={YOUR KEYWORDS},
+  pdfsubject={PhD Dissertation at the Massachusetts Institute of Technology and the Woods Hole Oceanographic Institution Joint Program in Oceanography/Applied Ocean Science & Engineering}
   ]{hyperref}
 
 \usepackage{bookmark}
@@ -303,16 +308,26 @@
   autocite     = footnote,
   backend      = biber,
   doi          = true,
-  url          = true,
+  url          = false,
+  isbn         = false,
+  eprint       = false,
   giveninits   = true,
   uniquename   = false,
   hyperref     = true,
   maxbibnames  = 99,
-  maxcitenames = 99,
-  sortcites    = false,
-  citestyle    = authortitle,
-  bibstyle     = numeric,
+  maxcitenames = 1,
+  sortcites    = true,
+  citestyle    = authortitle-icomp,
+  bibstyle     = nature,
+  uniquelist   = false,
   ]{biblatex}
+
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryCitekey{\clearfield{month}}
+\AtEveryBibitem{\clearlist{language}}
+\AtEveryBibitem{\clearlist{extra}}
+\AtEveryBibitem{\clearfield{pages}}
+\AtEveryBibitem{\clearfield{publisher}}
 
 \input{bibliography-mimosis}
 \addbibresource{Thesis.bib}
